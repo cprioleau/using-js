@@ -21,7 +21,7 @@
 }
 
 .twirl-div {
-  transform: rotate(720deg);
+  transform: rotate(720deg) scale(2);
   transition: all 1s ease-in-out;
   background-color: blue;
 }
@@ -29,7 +29,7 @@
 .overlay {
   height: 100%;
   width: 100%;
-  position:fixed;
+  position:fixed; /* to make it sit on top */
   top:0;
   left:0;
   z-index:9999;

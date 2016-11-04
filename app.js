@@ -32,9 +32,15 @@ $(document).ready(function() {
   });
 
   $("#create-overlay").on("click", function() {
-    // On click of the create-overlay button, show overlay. On click of the overlay, hide the overlay. You may want to reference jQuery [.hide()](http://api.jquery.com/hide/) and [.show()](http://api.jquery.com/show/).
-    // $(".overlay").show();
-    $(".overlay").css("display", "block");
+    // On click of the create-overlay button, show overlay.
+    $(".overlay").show();
+    // $(".overlay").css("display", "block");
+  });
+
+  $(".overlay").on("click", function() {
+    // On click of the overlay, hide the overlay. [.hide()](http://api.jquery.com/hide/)
+    $(".overlay").hide();
+    // $(".overlay").css( "display", "none" );
   });
 
 });
